@@ -24,6 +24,10 @@ jobs:
   build: # 1) 빌드 전용 Job — PR과 push 모두 실행
     name: build
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./demo
+
 
     steps:
       - name: Checkout
