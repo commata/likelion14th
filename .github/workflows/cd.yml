@@ -5,6 +5,7 @@ on:
     workflows: ["CI with Gradle"]
     types: ["completed"]
     branches: ["main"]
+  workflow_dispatch: 
 
 permissions:
   contents: read
